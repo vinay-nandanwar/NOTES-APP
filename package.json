@@ -1,0 +1,16 @@
+{
+  "name": "diya-arts-study-hub",
+  "version": "1.0.0",
+  "description": "Class 12 Arts Study Management App for Mahatma Fule College, Talodhi Balapur",
+  "scripts": {
+    "install:all": "npm install --prefix client && npm install --prefix server",
+    "dev:client": "npm run dev --prefix client",
+    "dev:server": "npm run dev --prefix server",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "build": "npm run build --prefix client && npm run build --prefix server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
+
